@@ -6,7 +6,25 @@ Bootstrapped with [Create React App](https://github.com/facebook/create-react-ap
 
 To start the project > `yarn start`
 
+## Dev Env
+
 ESLint Config > https://github.com/yazdipour/dot-files/blob/master/react.eslintrc
+
+VSCode launch:
+
+```js
+{
+    "version": "0.2.0",
+    "configurations": [{
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}
+```
 
 ### `yarn test`
 
