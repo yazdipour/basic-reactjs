@@ -16,6 +16,21 @@ import styles from "./Styles/Style.module.css";
 import Form from "./components/Form";
 import LifecycleA from "./components/LifecycleA";
 
+import FragmentDemo from "./components-adv/FragmentDemo";
+import Table from "./components-adv/Table";
+import PureComp from "./components-adv/PureComp";
+import MemoComp from "./components-adv/MemoComp";
+import RefsDemo from "./components-adv/RefsDemo";
+import PortalDemo from "./components-adv/PortalDemo";
+import Hero from "./components-adv/Hero";
+import ErrorBoundary from "./components-adv/ErrorBoundary";
+import ClickCounter from "./components-adv/ClickCounter";
+import HoverCounter from "./components-adv/HoverCounter";
+import { UserProvider } from "./components-adv/userContext";
+import ComponentC from "./components-adv/ComponentC";
+import PostForm from "./components-http/PostForm";
+import PostList from "./components-http/PostList";
+
 function App() {
   return (
     <div className="App">
@@ -37,6 +52,26 @@ function App() {
       <Form></Form>
       <br />
       <LifecycleA></LifecycleA>
+      <h5 style={{ background: "yellow" }}>---Advance Section---</h5>
+      <FragmentDemo></FragmentDemo>
+      <Table></Table>
+      <PureComp></PureComp>
+      <MemoComp></MemoComp>
+      <RefsDemo></RefsDemo>
+      <PortalDemo></PortalDemo>
+      <ErrorBoundary>
+        <Hero heroName="Superman"></Hero>
+        <Hero heroName="Jozker"></Hero>
+      </ErrorBoundary>
+      <ClickCounter></ClickCounter>
+      <HoverCounter></HoverCounter>
+      <UserProvider value="Shah">
+        <ComponentC></ComponentC>
+      </UserProvider>
+      <hline></hline>
+      npm install axios
+      <PostList />
+      <PostForm />
     </div>
   );
 }
